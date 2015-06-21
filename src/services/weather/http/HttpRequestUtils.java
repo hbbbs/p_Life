@@ -44,6 +44,6 @@ public class HttpRequestUtils {
         } catch (IOException e) {
             logger.error("get请求提交失败:" + url, e);
         }
-        return jsonResult;
+        return jsonResult;42343242
     }
 }

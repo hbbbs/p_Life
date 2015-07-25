@@ -1,7 +1,8 @@
-package util.http;
+package dc.network.http;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import dc.network.http.dic.HttpBackType;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -10,7 +11,6 @@ import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import util.http.dic.HttpBackType;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -20,12 +20,38 @@ import java.io.InputStreamReader;
 
 /**
  * Created by HB on 2015/6/21.
+ * <p/>
+ * 依赖 HttpClient
+ * <p/>
+ * <dependency>
+ * <groupId>org.apache.httpcomponents</groupId>
+ * <artifactId>httpclient</artifactId>
+ * <version>4.5</version>
+ * </dependency>
+ * <p/>
+ * 依赖 jackson json
+ * <dependency>
+ * <groupId>com.fasterxml.jackson.core</groupId>
+ * <artifactId>jackson-core</artifactId>
+ * <version>2.5.4</version>
+ * </dependency>
+ * <dependency>
+ * <groupId>com.fasterxml.jackson.core</groupId>
+ * <artifactId>jackson-databind</artifactId>
+ * <version>2.5.4</version>
+ * </dependency>
+ * <dependency>
+ * <groupId>com.fasterxml.jackson.core</groupId>
+ * <artifactId>jackson-annotations</artifactId>
+ * <version>2.5.4</version>
+ * </dependency>
  */
+
 public class HttpRequestUtils {
-    private static Logger logger = LoggerFactory.getLogger(HttpRequestUtils.class);    //日志记录
+    private static Logger logger = LoggerFactory.getLogger(HttpRequestUtils.class);    //鏃ュ織璁板綍
 
     public static void main(String[] args) {
-        System.out.println(HttpRequestUtils.httpGet_Json("http://wthrcdn.etouch.cn/weather_mini?city=株洲"));
+        System.out.println(HttpRequestUtils.httpGet_Json("http://wthrcdn.etouch.cn/weather_mini?city=鏍床"));
     }
 
     public static String httpGet_String(String url) {

@@ -3,8 +3,8 @@ package app.world.nature.weather.services;
 import app.world.nature.weather.domain.model.Weather;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import dc.network.http.HttpRequestUtils;
 import org.joda.time.LocalDate;
-import util.http.HttpRequestUtils;
 
 import java.io.IOException;
 

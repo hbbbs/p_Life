@@ -1,6 +1,5 @@
 package zen.frame.web.controller;
 
-import app.user.domain.model.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -28,20 +27,23 @@ public abstract class BaseController<T> {
 
     @RequestMapping("/add")
     public T add(HttpServletRequest request, @RequestBody T T) {
-        User loginUser = (User) (request.getSession().getAttribute("curUser"));
-        if (loginUser != null && loginUser.isAdmin()) {
-            return dao.save(T);
-        } else {
-            return null;
-        }
+//        User loginUser = (User) (request.getSession().getAttribute("curUser"));
+//        if (loginUser != null && loginUser.isAdmin()) {
+//            return dao.save(T);
+//        } else {
+//            return null;
+//        }
+        return dao.save(T);
+
     }
 
     @RequestMapping("/delete/{id}")
     public void delete(HttpServletRequest request, @PathVariable("id") String id) {
-        User loginUser = (User) (request.getSession().getAttribute("curUser"));
-        if (loginUser != null && loginUser.isAdmin()) {
-            dao.delete(id);
-        }
+//        User loginUser = (User) (request.getSession().getAttribute("curUser"));
+//        if (loginUser != null && loginUser.isAdmin()) {
+//            dao.delete(id);
+//        }
+        dao.delete(id);
     }
 
 }

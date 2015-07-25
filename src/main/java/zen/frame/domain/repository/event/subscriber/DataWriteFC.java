@@ -3,7 +3,7 @@ package zen.frame.domain.repository.event.subscriber;
 import akka.actor.UntypedActor;
 import app.world.god.date.domain.model.DateGod;
 import app.world.god.date.domain.repository.DateGodRepository;
-import util.spring.SpringUtil;
+import dc.library.spring.SpringUtil;
 import zen.frame.event.event.data.DataEvent_Write;
 
 /**

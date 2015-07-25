@@ -2,11 +2,12 @@ package app.world.god.date.domain.event.subscriber;
 
 import akka.actor.UntypedActor;
 import app.world.common.base.model.interfaces.IDateModel;
+import app.world.god.action.domain.Action;
 import app.world.god.date.domain.event.event.DateGodEvent;
 import app.world.god.date.domain.model.DateGod;
 import app.world.god.date.domain.repository.DateGodRepository;
+import dc.library.spring.SpringUtil;
 import org.joda.time.LocalDate;
-import util.spring.SpringUtil;
 import zen.frame.event.event.data.DataEvent_Write;
 import zen.frame.event.system.ES;
 
@@ -20,6 +21,12 @@ public class DateGodFC extends UntypedActor {
 
     @Override
     public void onReceive(Object msg) throws Exception {
+        testMainRun(msg);
+//        deal(msg);
+    }
+
+    private void deal(Object msg) {
+
         DateGodRepository repository = (DateGodRepository) SpringUtil.getBean("dateGodRepository");
 
         IDateModel[] dataModels = ((DateGodEvent) msg).getDateModels();
@@ -57,8 +64,13 @@ public class DateGodFC extends UntypedActor {
             dw.getDatas().put("dateGod", dg);
             ES.data.eventStream().publish(dw);
         }
+    }
 
-
+    private void testMainRun(Object msg) throws Exception {
+        IDateModel[] dataModels = ((DateGodEvent) msg).getDateModels();
+        for (int i = 0; i < dataModels.length; i++) {
+            System.out.println(dataModels[i].getDate() + "\t" +  ((Action) dataModels[i]).getActivityPlan().getName() + "\t" + ((Action) dataModels[i]).getSuitValue() + "-----------------------------------");
+        }
     }
 
 }

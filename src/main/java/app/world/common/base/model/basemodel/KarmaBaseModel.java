@@ -1,4 +1,4 @@
-package app.world.common.base.model;
+package app.world.common.base.model.basemodel;
 
 import app.world.common.base.model.interfaces.IKarma;
 import app.world.common.base.model.karma.Karma;
@@ -12,14 +12,14 @@ import java.util.Map;
 /**
  * Created by HB on 2015/7/1.
  */
-public abstract class AKarmaBaseModel extends BaseModel implements IKarma {
+public class KarmaBaseModel extends BaseModel implements IKarma {
 
     @JsonIgnore
     private Map<Integer,KarmaAll> karmaEffection = new HashMap<Integer,KarmaAll>();       //因果
     @JsonIgnore
     private Karma karma;                                                    //自身的因的标识
 
-    public AKarmaBaseModel() {
+    public KarmaBaseModel() {
         super();
         karma = new Karma();
         karma.setClassStr(this.getClass().getName());

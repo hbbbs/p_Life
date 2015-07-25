@@ -1,10 +1,13 @@
 package app.world.person.life.housework.washclothes.event.subscriber;
 
 import akka.actor.UntypedActor;
+import app.world.god.action.domain.Action;
+import app.world.god.action.domain.ActivityPlan;
+import app.world.god.action.domain.repository.ActivityPlanRepository;
 import app.world.god.date.domain.event.event.DateGodEvent;
 import app.world.nature.weather.domain.model.Weather;
-import app.world.person.life.housework.washclothes.domain.model.WashClothes;
 import app.world.person.life.housework.washclothes.st.WashClothesST;
+import dc.library.spring.SpringUtil;
 import zen.frame.event.system.ES;
 
 /**
@@ -14,11 +17,16 @@ public class WashClothesFC  extends UntypedActor {
 
     @Override
     public void onReceive(Object msg) throws Exception {
+        ActivityPlanRepository repository = (ActivityPlanRepository) SpringUtil.getBean("activityPlanRepository");
+        ActivityPlan ap = repository.findOneByName("洗衣服");
+
+
         Weather[] weathers = (Weather[])msg;
-        WashClothes[] wcs = new WashClothes[weathers.length];
+        Action[] wcs = new Action[weathers.length];
 
         for (int i = 0; i <weathers.length ; i++) {
-            wcs[i] = new WashClothes();
+            wcs[i] = new Action();
+            wcs[i].setActivityPlan(ap);
             wcs[i].setDate(weathers[i].getDate());
         }
 

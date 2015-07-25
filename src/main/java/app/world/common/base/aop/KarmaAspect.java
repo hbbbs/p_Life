@@ -16,7 +16,7 @@ import java.util.Arrays;
 @Aspect
 public class KarmaAspect {
 
-    @Before("execution(* app.world..model..*.$add*(..))")
+    @Before("execution(* app.world..domain..*.$add*(..))")
     public void beforeRunning(JoinPoint point){
         System.out.println("@Before：模拟日志记录功能...");
         System.out.println("@Before：目标方法为："  + point.getSignature().getName());

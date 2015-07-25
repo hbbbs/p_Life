@@ -20,7 +20,7 @@ public class MainRun {
         ES.app.eventStream().publish(weathers);
 
 
-        ES.app.shutdown();
-        ES.data.shutdown();
+//        ES.app.shutdown();
+//        ES.data.shutdown();
     }
 }

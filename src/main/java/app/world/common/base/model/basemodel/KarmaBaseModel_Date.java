@@ -1,4 +1,4 @@
-package app.world.common.base.model;
+package app.world.common.base.model.basemodel;
 
 import app.world.common.base.model.interfaces.IDateModel;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -7,7 +7,7 @@ import org.joda.time.LocalDate;
 /**
  * Created by HB on 2015/7/1.
  */
-public class KarmaBaseModel_Date extends AKarmaBaseModel implements IDateModel {
+public class KarmaBaseModel_Date extends KarmaBaseModel implements IDateModel {
     @JsonIgnore
     private LocalDate date;
 

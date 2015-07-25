@@ -1,6 +1,6 @@
 package app.world.nature.weather.domain.model;
 
-import app.world.common.base.model.KarmaBaseModel_Date;
+import app.world.common.base.model.basemodel.KarmaBaseModel_Date;
 import app.world.nature.weather.domain.model.dic.WeatherType;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -27,6 +27,21 @@ public class WeatherModel extends KarmaBaseModel_Date {
 
     private String humidity;                //湿度
     private String temperature;             //气温
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("WeatherModel{");
+        sb.append("日期 ='").append(getDate()).append("\t 星期").append(getDate().getDayOfWeek()).append('\'');
+        sb.append(", high_temperature='").append(high_temperature).append('\'');
+        sb.append(", wind_direction='").append(wind_direction).append('\'');
+        sb.append(", wind_scale='").append(wind_scale).append('\'');
+        sb.append(", low_temperature='").append(low_temperature).append('\'');
+        sb.append(", weather=").append(weather.name());
+        sb.append(", humidity='").append(humidity).append('\'');
+        sb.append(", temperature='").append(temperature).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 
     public WeatherType getWeather() {
         return weather;

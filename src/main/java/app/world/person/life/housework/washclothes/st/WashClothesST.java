@@ -1,11 +1,12 @@
 package app.world.person.life.housework.washclothes.st;
 
+import app.world.god.action.domain.Action;
 import app.world.nature.weather.domain.model.Weather;
-import app.world.person.life.housework.washclothes.domain.model.WashClothes;
 import org.joda.time.DateTimeConstants;
 
 /**
  * Created by HB on 2015/6/22.
+ * 洗衣服策略
  */
 public class WashClothesST {
     private static final int WEIGHT_RAINY = 10;                     //雨天权重
@@ -20,7 +21,7 @@ public class WashClothesST {
     private static final int WEIGHT_THURSDAY = 20;                   //星期四权重
 
 
-    public static void exec(WashClothes[] wcs, Weather[] weathers) {
+    public static void exec(Action[] wcs, Weather[] weathers) {
 
         int[] values = new int[weathers.length];
 

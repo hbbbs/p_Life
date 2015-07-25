@@ -4,10 +4,10 @@ package app.world.nature.weather.domain.model.dic;
  * Created by HB on 2015/6/22.
  */
 public enum WeatherType {
-    中雨,阵雨,阴,多云,晴;
+    小雨,中雨,大雨,阵雨,阴,多云,晴;
 
     public boolean isRainy(){
-        if(this == WeatherType.中雨 || this == WeatherType.阵雨){
+        if(this == WeatherType.小雨 || this == WeatherType.中雨 || this == WeatherType.大雨 || this == WeatherType.阵雨){
             return true;
         }else{
             return false;

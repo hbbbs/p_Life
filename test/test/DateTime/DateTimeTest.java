@@ -3,7 +3,7 @@ package test.DateTime;
 import org.joda.time.DateTime;
 
 /**
- * Created by HB on 2015/7/6.
+ * Created by HB .
  */
 public class DateTimeTest {
     public static void main(String[] args) {

@@ -1,7 +1,7 @@
 package app.world.nature.weather.domain.model.dic;
 
 /**
- * Created by HB on 2015/6/22.
+ * Created by HB .
  */
 public enum WeatherType {
     小雨,中雨,大雨,阵雨,阴,多云,晴;

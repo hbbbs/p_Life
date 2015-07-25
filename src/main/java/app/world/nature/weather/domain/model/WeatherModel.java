@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * Created by HB on 2015/7/7.
+ * Created by HB .
  */
 
 @JsonIgnoreProperties(ignoreUnknown = true)

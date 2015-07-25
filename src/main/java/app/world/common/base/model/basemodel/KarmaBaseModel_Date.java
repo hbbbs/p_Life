@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.joda.time.LocalDate;
 
 /**
- * Created by HB on 2015/7/1.
+ * Created by HB .
  */
 public class KarmaBaseModel_Date extends KarmaBaseModel implements IDateModel {
     @JsonIgnore

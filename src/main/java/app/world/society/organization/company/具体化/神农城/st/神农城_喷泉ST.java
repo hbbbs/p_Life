@@ -5,17 +5,17 @@ import app.world.nature.weather.domain.model.Weather;
 import org.joda.time.DateTimeConstants;
 
 /**
- * Created by HB on 2015/6/22.
+ * Created by HB .
  * 神农城_喷泉策略
  */
 public class 神农城_喷泉ST {
-    private static final int WEIGHT_RAINY = 0;                     //雨天权重
+    private static final int WEIGHT_RAINY = -50;                     //雨天权重
 
     private static final int WEIGHT_CLOUDY = 20;                    //阴天权重
 
     private static final int WEIGHT_SUNNY = 50;                     //晴天权重
 
-    private static final int WEIGHT_WEEKEND = 50;                   //周末权重
+    private static final int WEIGHT_WEEKEND = 30;                   //周末权重
     private static final int WEIGHT_WORKING = -100;                 //工作日权重
 
     public static void exec(Action[] wcs, Weather[] weathers) {

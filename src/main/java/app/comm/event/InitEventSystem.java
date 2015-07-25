@@ -13,7 +13,7 @@ import zen.frame.event.event.data.DataEvent_Write;
 import zen.frame.event.system.ES;
 
 /**
- * Created by HB on 2015/7/11.
+ * Created by HB .
  */
 public class InitEventSystem {
     public static void init() {

@@ -11,7 +11,7 @@ import dc.library.spring.SpringUtil;
 import zen.frame.event.system.ES;
 
 /**
- * Created by HB on 2015/6/22.
+ * Created by HB .
  */
 public class 啦啦好_玩玩具FC extends UntypedActor {
 

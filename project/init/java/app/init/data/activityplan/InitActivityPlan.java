@@ -1,5 +1,6 @@
 package app.init.data.activityplan;
 
+import app.world.common.dic.RequiredLevelType;
 import app.world.common.domain.Tag;
 import app.world.common.domain.repository.TagRepository;
 import app.world.god.action.domain.ActivityPlan;
@@ -36,6 +37,8 @@ public class InitActivityPlan {
         ap = new ActivityPlan();
         ap.setName("神农城_喷泉");
         ap.getList_tag().add(市内活动);
+        ap.getBackPack().put("游泳眼睛", RequiredLevelType.recommend);
+        ap.getBackPack().put("水枪", RequiredLevelType.recommend);
         list.add(ap);
 
         ap = new ActivityPlan();

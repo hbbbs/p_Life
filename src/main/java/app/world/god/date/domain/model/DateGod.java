@@ -1,7 +1,7 @@
 package app.world.god.date.domain.model;
 
 /**
- * Created by HB on 2015/7/7.
+ * Created by HB .
  */
 public class DateGod extends DateGodModel {
 

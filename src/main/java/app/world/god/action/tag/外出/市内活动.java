@@ -4,7 +4,7 @@ import app.world.common.dic.RequiredLevelType;
 import app.world.common.domain.Tag;
 
 /**
- * Created by HB on 2015/7/21.
+ * Created by HB .
  */
 public class 市内活动 extends Tag{
     public 市内活动() {

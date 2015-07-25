@@ -9,7 +9,7 @@ import org.joda.time.LocalDate;
 import java.io.IOException;
 
 /**
- * Created by HB on 2015/6/22.
+ * Created by HB .
  */
 public class WeatherServices {
     private static final String WEATHER_URL = "http://wthrcdn.etouch.cn/weather_mini?city=";

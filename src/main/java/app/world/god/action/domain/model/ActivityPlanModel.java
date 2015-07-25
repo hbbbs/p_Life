@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by HB on 2015/7/21.
+ * Created by HB .
  *
  * 活动
  */

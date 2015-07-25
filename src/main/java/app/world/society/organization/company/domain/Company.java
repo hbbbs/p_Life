@@ -3,7 +3,7 @@ package app.world.society.organization.company.domain;
 import app.world.society.organization.company.domain.model.CompanyModel;
 
 /**
- * Created by HB on 2015/7/20.
+ * Created by HB .
  */
 public class Company extends CompanyModel {
 

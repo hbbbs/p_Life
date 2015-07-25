@@ -3,7 +3,7 @@ package app.frame.manager.user.domain;
 import zen.frame.domain.model.BaseModel;
 
 /**
- * Created by HB on 2015/7/20.
+ * Created by HB .
  */
 public class User extends BaseModel{
     private String name;						//姓名

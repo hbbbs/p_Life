@@ -8,7 +8,7 @@ import test.comm.TestPojo;
 import java.util.Arrays;
 
 /**
- * Created by HB on 2015/7/1.
+ * Created by HB .
  */
 @Aspect
 public class AspectDeal {

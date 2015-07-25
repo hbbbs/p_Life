@@ -1,7 +1,7 @@
 package dc.network.http.dic;
 
 /**
- * Created by HB on 2015/6/22.
+ * Created by HB .
  */
 public enum HttpBackType {
     String,

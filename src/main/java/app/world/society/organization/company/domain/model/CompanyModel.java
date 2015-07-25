@@ -4,7 +4,7 @@ import app.world.god.place.domain.Place;
 import zen.frame.domain.model.BaseModel;
 
 /**
- * Created by HB on 2015/7/20.
+ * Created by HB .
  */
 public class CompanyModel  extends BaseModel {
     private String name;

@@ -19,7 +19,7 @@ import java.io.InputStreamReader;
 
 
 /**
- * Created by HB on 2015/6/21.
+ * Created by HB .
  * <p/>
  * 依赖 HttpClient
  * <p/>

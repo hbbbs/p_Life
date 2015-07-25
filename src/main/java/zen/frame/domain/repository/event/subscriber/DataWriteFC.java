@@ -7,7 +7,7 @@ import dc.library.spring.SpringUtil;
 import zen.frame.event.event.data.DataEvent_Write;
 
 /**
- * Created by HB on 2015/6/22.
+ * Created by HB .
  */
 public class DataWriteFC extends UntypedActor {
 

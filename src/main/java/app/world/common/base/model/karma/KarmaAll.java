@@ -1,7 +1,7 @@
 package app.world.common.base.model.karma;
 
 /**
- * Created by HB on 2015/7/7.
+ * Created by HB .
  */
 public class KarmaAll {
     private Karma karma;

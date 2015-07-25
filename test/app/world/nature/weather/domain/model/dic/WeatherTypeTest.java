@@ -6,7 +6,7 @@ import static org.hamcrest.Matchers.is;
 import static org.junit.Assert.assertThat;
 
 /**
- * Created by HB on 2015/7/10.
+ * Created by HB .
  */
 public class WeatherTypeTest {
 

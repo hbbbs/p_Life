@@ -1,7 +1,7 @@
 package test.comm;
 
 /**
- * Created by HB on 2015/7/1.
+ * Created by HB .
  */
 public class TestPojo {
     private String name;

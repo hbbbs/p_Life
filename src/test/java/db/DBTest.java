@@ -21,7 +21,7 @@ public class DBTest {
     public void getAllBackPack() {
         ActivityPlanRepository repository = (ActivityPlanRepository) SpringUtil.getBean("activityPlanRepository");
 
-        ActivityPlan ap = repository.findOneByName("啦啦好_玩玩具");
+        ActivityPlan ap = repository.findOneByName("神农城_喷泉");
         Map<String, RequiredLevelType> map = ap.getAllBackPack();
         for (Map.Entry<String, RequiredLevelType> entry : map.entrySet()) {
             System.out.println(entry.getKey() + " \t " + entry.getValue().name());

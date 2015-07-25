@@ -3,7 +3,7 @@ package app.world.nature.weather.services;
 import org.junit.Test;
 
 /**
- * Created by HB on 2015/7/10.
+ * Created by HB .
  */
 public class WeatherServicesTest {
 

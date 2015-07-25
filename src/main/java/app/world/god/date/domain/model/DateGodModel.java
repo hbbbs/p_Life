@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by HB on 2015/7/7.
+ * Created by HB .
  */
 public class DateGodModel extends BaseModel implements IDateModel {
     private LocalDate date;

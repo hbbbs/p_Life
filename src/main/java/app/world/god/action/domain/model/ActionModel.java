@@ -5,7 +5,7 @@ import app.world.god.action.domain.ActivityPlan;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 
 /**
- * Created by HB on 2015/7/24.
+ * Created by HB .
  */
 public class ActionModel extends KarmaBaseModel_Date {
     private int suitValue;          //适合值

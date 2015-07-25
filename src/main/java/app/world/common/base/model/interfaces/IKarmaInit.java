@@ -3,7 +3,7 @@ package app.world.common.base.model.interfaces;
 import app.world.common.base.model.karma.Karma;
 
 /**
- * Created by HB on 2015/7/1.
+ * Created by HB .
  */
 public interface IKarmaInit {
 

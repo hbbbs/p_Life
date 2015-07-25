@@ -6,7 +6,7 @@ import app.world.common.base.model.karma.KarmaAll;
 import java.util.Map;
 
 /**
- * Created by HB on 2015/7/1.
+ * Created by HB .
  */
 public interface IKarma {
     public Karma getKarma();

@@ -5,7 +5,7 @@ import app.world.nature.weather.domain.model.Weather;
 import org.joda.time.DateTimeConstants;
 
 /**
- * Created by HB on 2015/6/22.
+ * Created by HB .
  * 洗衣服策略
  */
 public class WashClothesST {

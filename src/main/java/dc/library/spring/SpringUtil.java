@@ -3,7 +3,7 @@ package dc.library.spring;
 import zen.frame.global.Global;
 
 /**
- * Created by HB on 2015/7/7.
+ * Created by HB .
  */
 public class SpringUtil {
     public static Object getBean(String id) {

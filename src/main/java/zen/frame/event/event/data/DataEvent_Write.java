@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by HB on 2015/7/7.
+ * Created by HB .
  */
 public class DataEvent_Write {
     private String serverName;
